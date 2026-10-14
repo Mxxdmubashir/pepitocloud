@@ -1,0 +1,29 @@
+{
+  "name": "pepito-cloud-kitchen-software",
+  "version": "1.0.0",
+  "description": "Pepito Cloud Kitchen Enterprise Billing, POS, Multi-Brand Aggregator & KDS System",
+  "scripts": {
+    "install:backend": "npm --prefix backend install",
+    "install:frontend": "npm --prefix frontend install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "seed": "npm --prefix backend run seed",
+    "dev": "concurrently --kill-others-on-fail -n \"BACKEND,FRONTEND\" -c \"blue,green\" \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "keywords": [
+    "cloud-kitchen",
+    "pos",
+    "kds",
+    "kitchen-display-system",
+    "multi-brand",
+    "billing",
+    "inventory",
+    "recipe-bom"
+  ],
+  "author": "Pepito Kitchen",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
