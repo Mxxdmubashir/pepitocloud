@@ -35,3 +35,4 @@ Thumbs.db
 # Database temporary files
 backend/data/*.db-shm
 backend/data/*.db-wal
+
